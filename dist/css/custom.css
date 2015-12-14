@@ -15,6 +15,10 @@ body {
     font-size: 18px;
 }
 
+.underlined {
+  text-decoration: underline;
+}
+
 .btn-default {
     background-color: #fff;
     color: #333;
@@ -106,4 +110,3 @@ body {
   bottom:0;
   height:60px;
 }
-

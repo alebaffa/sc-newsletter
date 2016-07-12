@@ -25,7 +25,14 @@
 </head>
 
 <body>
-
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=167378716647348";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <!-- Page Content -->
   <div class="container">
     <div class="row">
@@ -37,6 +44,8 @@
         <h5 style="text-align:center">Curated list of interesting links for professional Software Developers</h5>
         <br />
         <h6>Past issues</h6>
+        <a href="http://eepurl.com/b9y_pz" class="btn btn-primary btn-sm">#14</a>
+        <a href="http://eepurl.com/b5ZQ8z" class="btn btn-primary btn-sm">#13</a>
         <a href="http://eepurl.com/b3UqTn" class="btn btn-primary btn-sm">#12</a>
         <a href="http://eepurl.com/b0gq3v" class="btn btn-primary btn-sm">#11</a>
         <a href="http://eepurl.com/bY_kWT" class="btn btn-primary btn-sm">#10</a>
@@ -81,13 +90,12 @@
             </div>
           </div>
           <!--/.Subscription widget -->
+          <div class="fb-page" data-href="https://www.facebook.com/swcraftnewsletter/" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/swcraftnewsletter/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/swcraftnewsletter/">Software Craftsmanship Newsletter</a></blockquote></div>
         </div>
       </div>
 
     </div>
     <!-- /.row -->
-
-    <hr>
 
   </div>
   <!-- /.container -->

@@ -1,150 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Software Craftsmanship Newsletter</title>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<title>Software Craftsmanship Newsletter</title>
 
-  <!-- Material Design Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="images/gt_favicon.png">
+	
+	<!-- Bootstrap itself -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Icons -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"> 
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/styles.css">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.css" rel="stylesheet">
-
-  <!-- Template style -->
-  <link href="css/style.css" rel="stylesheet">
-  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 
 <body>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=167378716647348";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <!-- Blog Entries Column -->
-      <div class="col-md-8">
-        <h1 class="page-header" style="text-align:center">
-          Software Craftsmanship Newsletter
-        </h1>
-        <h5 style="text-align:center">Curated list of interesting links for professional Software Developers</h5>
-        <br />
-        <h6>Past issues</h6>
-        <a href="http://eepurl.com/b9y_pz" class="btn btn-primary btn-sm">#14</a>
-        <a href="http://eepurl.com/b5ZQ8z" class="btn btn-primary btn-sm">#13</a>
-        <a href="http://eepurl.com/b3UqTn" class="btn btn-primary btn-sm">#12</a>
-        <a href="http://eepurl.com/b0gq3v" class="btn btn-primary btn-sm">#11</a>
-        <a href="http://eepurl.com/bY_kWT" class="btn btn-primary btn-sm">#10</a>
-        <a href="http://eepurl.com/bVHGzD" class="btn btn-primary btn-sm">#9</a>
-        <a href="http://eepurl.com/bTdA_9" class="btn btn-primary btn-sm">#8</a>
-        <a href="http://eepurl.com/bQM3Z5" class="btn btn-primary btn-sm">#7</a>
-        <a href="http://eepurl.com/bNTGJ5" class="btn btn-primary btn-sm">#6</a>
-        <a href="http://eepurl.com/bMBdtT" class="btn btn-primary btn-sm">#5</a>
-        <a href="http://eepurl.com/bJZXG1" class="btn btn-primary btn-sm">#4</a>
-        <a href="http://eepurl.com/bHHpFb" class="btn btn-primary btn-sm">#3</a>
-        <a href="http://eepurl.com/bGYw91" class="btn btn-primary btn-sm">#2</a>
-        <a href="http://eepurl.com/bGQmoT" class="btn btn-primary btn-sm">#1</a>
-      </div>
 
-      <!-- Blog Sidebar Widgets Column -->
-      <div class="col-md-4">
-        <div class="sidebar">
-          <!-- Subscription widget -->
-          <div class="card-panel">
-            <div class="row">
-              <form action="http://meetup.us12.list-manage.com/subscribe/post" method="POST" class="col-md-12">
-                <input type="hidden" name="u" value="236e2ae83565c4e5b130ac556">
-                <input type="hidden" name="id" value="b96cfd64fc">
-                <h5>Subscribe</h5>
-                <h6>You will receive an issue once a month.</h6>
-                <br>
-                <div class="input-field">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="icon_prefix" type="text" class="validate" name="MERGE1" id="MERGE1" value="">
-                  <label for="icon_prefix">Your Name</label>
-                </div>
-                <div class="input-field">
-                  <i class="material-icons prefix">mail</i>
-                  <input id="icon_telephone" type="text" class="validate" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
-                  <label for="icon_telephone">Your Email</label>
-                </div>
-                <div aria-hidden="true" style="display: none;"><input type="text" name="b_236e2ae83565c4e5b130ac556_b96cfd64fc" tabindex="-1" value=""></div>
-                <div class="text-center">
-                  <button type="submit" name="submit" class="btn btn-info waves-effect waves-light">Subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <!--/.Subscription widget -->
-          <div class="fb-page" data-href="https://www.facebook.com/swcraftnewsletter/" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/swcraftnewsletter/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/swcraftnewsletter/">Software Craftsmanship Newsletter</a></blockquote></div>
-        </div>
-      </div>
+<!-- Header -->
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-push-2 text-center">
+				<h1>Software Craftsmanship Newsletter</h1>
+				<p class="lead">
+					Curated list of interesting links for professional Software Developers
+				</p>
+				
+				<form class="form-inline" role="form" action="http://meetup.us12.list-manage.com/subscribe/post" method="POST">
+					<input type="hidden" name="u" value="236e2ae83565c4e5b130ac556">
+					<input type="hidden" name="id" value="b96cfd64fc">
+					<div class="form-group"><input type="text" class="form-control input-lg" id="exampleInputEmail2" placeholder="Your Name" name="MERGE1" id="MERGE1" value=""></div>
+					<div class="form-group"><input type="text" class="form-control input-lg" id="exampleInputPassword2" placeholder="Your Email" name="MERGE0" id="MERGE0" value=""></div>
+					<div aria-hidden="true" style="display: none;"><input type="text" name="b_236e2ae83565c4e5b130ac556_b96cfd64fc" tabindex="-1" value=""></div>
+					<button type="submit" name="submit" class="btn btn-lg btn-default">Subscribe</button>
+				</form>
+				<p class="small text-muted">Powered by Mailchimp. Unsubscribe at any time.</p>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- /Header -->
+	
 
-    </div>
-    <!-- /.row -->
+<!-- Content -->
+<main class="content">
 
-  </div>
-  <!-- /.container -->
+	<!-- Features -->
+	<section class="container-fluid space-before">
+		
+		<div class="row featurelist space-after">
+			<div class="col-md-5 col-sm-6 col-md-push-1 ">
+				<img class="img-feature img-responsive" src="images/issue.png" alt="Sample image">
+			</div>
+			<div class="col-md-5 col-md-push-1 col-sm-6">
+				<h2 class="space-before">A glimps of what you will receive. <span class="text-muted">Once per month.</span></h2>
+				<p>From technical to the human aspects of software development. Be inspired from the stories and thoughts of fellow software craftsmen and craftswomen from around the world. Learn and discover by following the global discussion on how to craft software. </p>
+			</div>
+		</div>
 
 
-  <!-- Footer -->
-  <footer class="page-footer blue center-on-small-only">
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-md-4 col-md-offset-1">
-                      <h5 class="white-text">What is Software Craftsmanship?</h5>
-                      <a class="btn btn-success" href="http://manifesto.softwarecraftsmanship.org/"><i class="material-icons right">star</i>Read the Manifesto</a>
-                  </div>
-                  <div class="col-md-3">
-                      <h5 class="white-text">Join the global community</h5>
-                      <ul>
-                          <li><a class="grey-text text-lighten-3" href="#!"><a href="http://slack.softwarecraftsmanship.org/" class="btn btn-success waves-effect waves-light">Join it on Slack</a></a></li>
-                      </ul>
-                  </div>
-                  <div class="col-md-4">
-                      <h5 class="white-text">Contribute!</h5>
-                      <p class="white-text">
-                        Share interesting articles on Twitter using the hashtag <span class="label label-success"><a href="https://twitter.com/search?q=%23softwarecraftsmanship&src=savs">#softwarecraftsmanship</a></span>.
-                        Or check out the contribution guide on <span class="label label-danger"><a href="https://github.com/alebaffa/sc-newsletter-issues">Github</a></span>.
-                        <br />Your links could be part of the next issue!
-                  </div>
-              </div>
-          </div>
-          <div class="footer-copyright text-center rgba-black-light">
-              <div class="container-fluid">
-                A side project by <a href="https://twitter.com/alebaffa">Alessandro Baffa</a>
-              </div>
-          </div>
-      </footer>
+		<div class="row featurelist space-after">
+			<div class="col-md-5 col-sm-6 col-sm-push-6">
+				<img class="img-feature img-responsive" src="images/socrates.jpg" alt="Sample image">
+			</div>
+			<div class="col-md-5 col-sm-6 col-md-pull-4 col-sm-pull-6">
+				<h2 class="space-before">Join the International Software Craftsmanship Community</span></h2>
+				<p><a href="http://slack.softwarecraftsmanship.org/">Join this awesome community</a> of passionate people! Participate to and learn from the their discussions and events. A truly friendly, open, welcoming and growing community of people who care about how to improve themselves and the world around them.</p>
+			</div>
+		</div>
+	</section>
+	<!-- /Features -->
+</main>
 
+<footer id="footer" class="jumbotron-archive">
+	<section class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-push-1">
+				<h2>Check out the latest issues:</span></h2>
+				<a href="http://eepurl.com/caRlUr" class="btn btn-primary btn-sm">#15</a>
+				<a href="http://eepurl.com/b9y_pz" class="btn btn-primary btn-sm">#14</a>
+				<a href="http://eepurl.com/b5ZQ8z" class="btn btn-primary btn-sm">#13</a>
+				<a href="http://eepurl.com/b3UqTn" class="btn btn-primary btn-sm">#12</a>
+				<a href="http://eepurl.com/b0gq3v" class="btn btn-primary btn-sm">#11</a>
+				<a href="http://eepurl.com/bY_kWT" class="btn btn-primary btn-sm">#10</a>
+				<a href="http://eepurl.com/bVHGzD" class="btn btn-primary btn-sm">#9</a>
+				<a href="http://eepurl.com/bTdA_9" class="btn btn-primary btn-sm">#8</a>
+				<a href="http://eepurl.com/bQM3Z5" class="btn btn-primary btn-sm">#7</a>
+				<a href="http://eepurl.com/bNTGJ5" class="btn btn-primary btn-sm">#6</a>
+				<a href="http://eepurl.com/bMBdtT" class="btn btn-primary btn-sm">#5</a>
+				<a href="http://eepurl.com/bJZXG1" class="btn btn-primary btn-sm">#4</a>
+				<a href="http://eepurl.com/bHHpFb" class="btn btn-primary btn-sm">#3</a>
+				<a href="http://eepurl.com/bGYw91" class="btn btn-primary btn-sm">#2</a>
+				<a href="http://eepurl.com/bGQmoT" class="btn btn-primary btn-sm">#1</a>	
+			</div>
+		</div>	
+	</section>
+</footer>
 
+<footer id="footer" class="jumbotron-footer">
+	<section class="container">
+		<div class="row">
+				<div class="col-md-5 col-md-push-1">
+					<h2>Follow the newsletter <a href="https://www.facebook.com/swcraftnewsletter/">on Facebook</a></h2>
+					<h3>Share your articles on Twitter with hashtag <a href="https://twitter.com/search?q=%23softwarecraftsmanship">#softwarecraftsmanship</a></h3>	
+					<b>Your articles can be part of the next issues</b>
+				</div>
+				<div class="col-md-5 col-md-push-1">
+					<h2>Feedback is welcome!</h2>
+					<p><a href="mailto:newsletter@softwarecraftsmanshipcommunity.org">Get in touch</a> anytime to give me your feedback on how to improve this newsletter.</p>
+				</div>
+		</div>	
+	</section>
+</footer>
 
-  <!-- SCRIPTS -->
+<p class="small text-muted text-center">A side project by: <a href="https://twitter.com/alebaffa">alebaffa</a></p>
+<br>
 
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-  <!-- Material Design Bootstrap -->
-  <script type="text/javascript" src="js/mdb.js"></script>
-
-  <!-- Piwik -->
+<!-- Piwik -->
   <script type="text/javascript">
     var _paq = _paq || [];
     _paq.push(['trackPageView']);
@@ -158,6 +138,10 @@
     })();
   </script>
 
-</body>
 
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/template.js"></script>
+
+</body>
 </html>
